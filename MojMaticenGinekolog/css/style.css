@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+.container-fluid {
+    padding: 0 !important;
+}
 html,
 body {
     height: 100%;
@@ -44,8 +46,9 @@ body {
 
 #map {
     position: fixed;
-    width: 550px;
-    height: 400px;
+    margin: 0 auto;
+    width: 600px;
+    height: 500px;
 }
 
 #about {
