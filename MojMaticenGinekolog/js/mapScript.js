@@ -39,8 +39,8 @@ function initMap() {
         disableDefaultUI: true,
         zoomControl: false,
         scrollwheel: false,
-        draggable: false
-
+        draggable: false,
+        disableDoubleClickZoom: true,
     });
 
     map.mapTypes.set('mystyle', new google.maps.StyledMapType(myStyle, { name: 'My Style' }));
@@ -1951,28 +1951,25 @@ function initMap() {
             strokeWeight: 2,
             fillOpacity: 0.35,
             content: '',
+            bolnica: 'eteRaboti'
         }),
     ];
 
 
-
     // ===============================EVENTS===============================
-
-    // add custom color to the municipalities
-    for (let i = 0; i < opstina.length; i++) {
-        opstina[i].setOptions({ fillColor: "#7647b7" });
-        opstina[i].setOptions({ fillOpacity: 1 });
-        opstina[i].setOptions({ strokeWeight: 1 });
-        opstina[i].setOptions({ strokeColor: "white" });
-        opstina[i].setOptions({ strokeOpacity: 0.8 });
-    };
 
     let coords = new google.maps.LatLngBounds();
 
     // Set InfoWindow to fit on each municipality
     for (let i = 0; i < opstina.length; i++) {
         opstina[i].setMap(map);
-        let temp = opstina[i].paths;
+        opstina[i].setOptions({ 
+            fillColor: "#7647b7", 
+            fillOpacity: 1, 
+            strokeWeight: 1, 
+            strokeColor: "white", 
+            strokeOpacity: 0.8
+        });
         google.maps.Polygon.prototype.my_getBounds = function() {
             let bounds = new google.maps.LatLngBounds()
             this.getPath().forEach(function(element, index) { bounds.extend(element) })
@@ -1985,18 +1982,13 @@ function initMap() {
         });
         // 
         google.maps.event.addListener(opstina[i], "mouseover", function(event) {
-
             infowindow.open(map, opstina[i]);
         });
-
         google.maps.event.addListener(opstina[i], "click", function(event) {
-            infowindow.open(map, opstina[i]);
+            document.getElementById('glupsi').innerText = opstina[74].bolnica;
         });
-
         google.maps.event.addListener(opstina[i], "mouseout", function(event) {
             infowindow.close(map, opstina[i]);
-        })
-
-
+        });
     }
 };
