@@ -30,7 +30,13 @@ body {
     padding-top: 15rem;
     background-attachment: fixed;
 }
-
+.hide {
+    display: none;
+}
+.btnStart {
+    display: inline-block;
+    margin: 0 auto;
+}
 #coverCaption {
     color: #fff;
 }
