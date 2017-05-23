@@ -2091,20 +2091,35 @@ function initMap() {
                 infowindow.open(map, opstina[i]);
                 this.setOptions( { fillColor: '#4b1c8c'} )
             });
-            google.maps.event.addListener(opstina[i], "click", function(event) {
-                $('#gameContent').text("");
-                $('#gameContent').append(`<div id="municipality_Info">
-                            <h2 id="municipality_name">Општина: ${this.name}</h2>
-                            <h5 id="population">Вкупно население: ${this.population}</h5>
-                            <h4 id="gynecologists">Број на гинеколози: ${this.gynecologists > 0 ? this.gynecologists : 
-                                "Во вашата општина нема гинеколози кои соработуваат со Фонд за Здравство, одете до наредната општина"}</h4>
-                            <button id="makeFirstApp" class="btn btn-primary appointmentBtn">Закажи Прв Преглед</button>
-                          </div>`);
-
-            });
+            
             google.maps.event.addListener(opstina[i], "mouseout", function(event) {
                 this.setOptions( { fillColor: '#7647b7'} )
                 infowindow.close(map, opstina[i]);
+            });
+            google.maps.event.addListener(opstina[i], "click", function(event) {
+                $(() => {                   
+                    $('#gameContent').text("");
+                    this.setOptions( { fillColor: '#4b1c8c'} )
+                    $('#gameContent').append(`
+                        <div class="row">
+                            <div class="col">
+                                <h2 id="municipality_name">Општина: ${this.name}</h2>
+                                <h5 id="population">Вкупно население: ${this.population}</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">                            
+                                <h4 id="gynecologists">Број на гинеколози: ${this.gynecologists > 0 ? this.gynecologists : 
+                                        "Во вашата општина нема гинеколози кои соработуваат со Фонд за Здравство, одете до наредната општина"}</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <di class="col">
+                                <button id="makeFirstApp" class="btn btn-primary appointmentBtn">Закажи Прв Преглед</button>
+                            </div>
+                        </div>
+                    `);
+                });
             });
         }
         $('#startGame').toggle('hide');
