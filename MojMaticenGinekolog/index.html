@@ -59,34 +59,50 @@
             sit amet, consectetur adipisicing elit. Optio, numquam incidunt dolores excepturi ea doloribus vitae repellat
             nihil quibusdam, ut sequi illo praesentium possimus architecto in ipsum quam repellendus odit!......<span id='glupsi'></span> </p>
     </div>
-    <button id="startGame" class="btn danger btnStart">Start Game</button>
-    <div id="map"></div>
-
-    <div class="card-deck container" id="card__holder">
-        <div class="card">
-            <img class="card-img-top" src="Assets/card-group1.jpg" alt="Card image cap">
-            <div class="card-block">
-                <h4 class="card-title">Сведовштва</h4>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-                    is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="gameContainer" class="gameContainer">
+                    <button id="startGame" class="btn btn-danger btnStart">Start Game</button>
+                    <div id="map"></div>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img class="card-img-top" src="Assets/card-group2.jpg" alt="Card image cap">
-            <div class="card-block">
-                <h4 class="card-title">Абортус</h4>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="row">
+            <div class="col">
+                <div id="gameContent"></div>
             </div>
         </div>
-        <div class="card">
-            <img class="card-img-top" src="Assets/card-group3.png" alt="Card image cap">
-            <div class="card-block">
-                <h4 class="card-title">Системски проблеми</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card
-                    has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="row">
+            <div class="col">
+                <div class="card-deck" id="card__holder">
+                    <div class="card">
+                        <img class="card-img-top" src="Assets/card-group1.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Сведовштва</h4>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                                is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Assets/card-group2.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Абортус</h4>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Assets/card-group3.png" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Системски проблеми</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card
+                                has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -104,10 +120,11 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
     <script src="js/mapScript.js"></script>
+    <script type="text/javascript" src="js/gameContent.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQgql9EjR9tCx0TYcrPvtrYWCdKUvEv6w&callback=initMap"></script>
 
 </body>

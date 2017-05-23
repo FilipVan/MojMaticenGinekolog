@@ -33,9 +33,11 @@ body {
 .hide {
     display: none;
 }
+.gameContainer {
+    
+}
 .btnStart {
-    display: inline-block;
-    margin: 0 auto;
+    margin-left: 40%;
 }
 #coverCaption {
     color: #fff;

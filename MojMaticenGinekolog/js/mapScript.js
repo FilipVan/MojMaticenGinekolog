@@ -405,7 +405,7 @@ function initMap() {
             new google.maps.LatLng(42.01967, 22.1164), new google.maps.LatLng(42.02302, 22.12295), new google.maps.LatLng(42.02571, 22.13319),
             new google.maps.LatLng(42.02702, 22.14119), new google.maps.LatLng(42.02952, 22.1509), new google.maps.LatLng(42.03353, 22.15747),
         ];
-        let cesnikovo = [
+        let cesinovo = [
             new google.maps.LatLng(41.94892, 22.25577), new google.maps.LatLng(41.94175, 22.25908), new google.maps.LatLng(41.937, 22.26421),
             new google.maps.LatLng(41.92969, 22.27163), new google.maps.LatLng(41.92407, 22.27614), new google.maps.LatLng(41.92049, 22.28752),
             new google.maps.LatLng(41.9196, 22.29562), new google.maps.LatLng(41.91959, 22.30903), new google.maps.LatLng(41.92027, 22.31989),
@@ -1300,7 +1300,6 @@ function initMap() {
         ];
 
 
-
         let opstina = [
             new google.maps.Polygon({
                 name: "Крива Паланка",
@@ -1308,7 +1307,9 @@ function initMap() {
                 strokeColor: '#FF0000',
                 strokeWeight: .5,
                 fillOpacity: 0.10,
-                content: `Test`,
+                content: ``,
+                gynecologists: 2,
+                population: "20.820"
             }),
             new google.maps.Polygon({
                 name: "Зелениково",
@@ -1316,7 +1317,9 @@ function initMap() {
                 strokeColor: '#FF0000',
                 strokeWeight: .5,
                 fillOpacity: 0.10,
-                content: "",
+                content: ``,
+                gynecologists: 0,
+                population: "4.144"
             }),
             new google.maps.Polygon({
                 name: "Ранковице",
@@ -1325,6 +1328,7 @@ function initMap() {
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                population: "4.144"
             }),
             new google.maps.Polygon({
                 name: "Кратово",
@@ -1333,6 +1337,8 @@ function initMap() {
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                gynecologists: 1,
+                population: "10.441"
             }),
             new google.maps.Polygon({
                 name: "Кочани",
@@ -1341,6 +1347,8 @@ function initMap() {
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                gynecologists: 4,
+                population: "38.092"
             }),
             new google.maps.Polygon({
                 name: "Пробиштип",
@@ -1349,14 +1357,17 @@ function initMap() {
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                gynecologists: 1,
+                population: "16.193"
             }),
             new google.maps.Polygon({
-                name: "Чешниково",
-                paths: cesnikovo,
+                name: "Чешиново",
+                paths: cesinovo,
                 strokeColor: '#FF0000',
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                population: "7.490"
             }),
             new google.maps.Polygon({
                 name: "Зрновци",
@@ -1365,6 +1376,7 @@ function initMap() {
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                population: "3.264"
             }),
             new google.maps.Polygon({
                 name: "Свети Николе",
@@ -1373,6 +1385,8 @@ function initMap() {
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                gynecologists: 1,
+                population: "18.497"
             }),
             new google.maps.Polygon({
                 name: "Карбинци",
@@ -1381,6 +1395,7 @@ function initMap() {
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                population: "4.012"
             }),
             new google.maps.Polygon({
                 name: "Петровец",
@@ -1389,6 +1404,7 @@ function initMap() {
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                population: "8.255"
             }),
             new google.maps.Polygon({
                 name: "Велес",
@@ -1397,6 +1413,8 @@ function initMap() {
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                gynecologists: 4,
+                population: "55.108"
             }),
             new google.maps.Polygon({
                 name: "Лозово",
@@ -1405,6 +1423,7 @@ function initMap() {
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                population: "2.858"
             }),
             new google.maps.Polygon({
                 name: "Штип",
@@ -1413,6 +1432,8 @@ function initMap() {
                 strokeWeight: .5,
                 fillOpacity: 0.10,
                 content: "",
+                gynecologists: 4,
+                population: "47.796"
             }),
             new google.maps.Polygon({
                 name: "Дебарца",
@@ -1422,6 +1443,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "5.507"
             }),
             new google.maps.Polygon({
                 name: "Битола",
@@ -1429,7 +1451,9 @@ function initMap() {
                 strokeColor: '#FF0000',
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
-                fillOpacity: 0.35
+                fillOpacity: 0.35,
+                gynecologists: 7,
+                population: "95.385"
             }),
             new google.maps.Polygon({
                 name: "Новаци",
@@ -1439,6 +1463,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fsdfdsfsd",
+                population: "3.549"
             }),
             new google.maps.Polygon({
                 name: "Демир Хисар",
@@ -1446,7 +1471,8 @@ function initMap() {
                 strokeColor: "#FF0000",
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
-                fillOpacity: 0.35
+                fillOpacity: 0.35,
+                population: "9.497"
             }),
             new google.maps.Polygon({
                 name: "Могила",
@@ -1454,7 +1480,8 @@ function initMap() {
                 strokeColor: "#FF0000",
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
-                fillOpacity: 0.35
+                fillOpacity: 0.35,
+                population: "6.710"
             }),
             new google.maps.Polygon({
                 name: "Охрид",
@@ -1463,6 +1490,8 @@ function initMap() {
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
                 fillOpacity: 0.35,
+                gynecologists: 4,
+                population: "55.749"
 
             }),
             new google.maps.Polygon({
@@ -1472,6 +1501,8 @@ function initMap() {
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
                 fillOpacity: 0.35,
+                gynecologists: 4,
+                population: "63.376"
             }),
             new google.maps.Polygon({
                 name: "Ресен",
@@ -1480,6 +1511,8 @@ function initMap() {
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
                 fillOpacity: 0.35,
+                gynecologists: 1,
+                population: "16.825"
             }),
             new google.maps.Polygon({
                 name: "Центар Жупа",
@@ -1488,6 +1521,7 @@ function initMap() {
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
                 fillOpacity: 0.35,
+                population: "6.519"
             }),
             new google.maps.Polygon({
                 name: "Дебар",
@@ -1496,6 +1530,8 @@ function initMap() {
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
                 fillOpacity: 0.35,
+                gynecologists: 2,
+                population: "19.542"
             }),
             new google.maps.Polygon({
                 name: "Другово",
@@ -1504,6 +1540,7 @@ function initMap() {
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
                 fillOpacity: 0.35,
+                population: "3.249"
             }),
             new google.maps.Polygon({
                 name: "Крушево",
@@ -1512,6 +1549,7 @@ function initMap() {
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
                 fillOpacity: 0.35,
+                population: "9.684"
             }),
             new google.maps.Polygon({
                 name: "Кривогаштани",
@@ -1519,7 +1557,8 @@ function initMap() {
                 strokeColor: '#FF0000',
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
-                fillOpacity: 0.35
+                fillOpacity: 0.35,
+                population: "6.150"
             }),
             new google.maps.Polygon({
                 name: "Прилеп",
@@ -1527,7 +1566,9 @@ function initMap() {
                 strokeColor: '#FF0000',
                 strokeOpacity: 0.8,
                 strokeWeight: 2,
-                fillOpacity: 0.35
+                fillOpacity: 0.35,
+                gynecologists: 5,
+                population: "76.768"
             }),
             new google.maps.Polygon({
                 name: "Долнени",
@@ -1537,6 +1578,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "13.568"
             }),
             new google.maps.Polygon({
                 name: "Пласница",
@@ -1546,6 +1588,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "4.545"
             }),
             new google.maps.Polygon({
                 name: "Вранештица",
@@ -1555,6 +1598,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fsdfdsfsd",
+                population: "1.322"
             }),
             new google.maps.Polygon({
                 name: "Маврово",
@@ -1564,6 +1608,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 1,
+                population: "8.618"
             }),
             new google.maps.Polygon({
                 name: "Кичево",
@@ -1573,6 +1619,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 4,
+                population: "30.138"
             }),
             new google.maps.Polygon({
                 name: "Зајас",
@@ -1582,6 +1630,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: '11.605'
             }),
             new google.maps.Polygon({
                 name: "Осломеј",
@@ -1591,6 +1640,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "10.420"
             }),
             new google.maps.Polygon({
                 name: "Македонски Брод",
@@ -1600,6 +1650,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "7.141"
             }),
             new google.maps.Polygon({
                 name: "Гостивар",
@@ -1609,6 +1660,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 5,
+                population: "81.042"
             }),
             new google.maps.Polygon({
                 name: "Чашка",
@@ -1618,6 +1671,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "7.673"
             }),
             new google.maps.Polygon({
                 name: "Врапчиште",
@@ -1627,6 +1681,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "25.399"
             }),
             new google.maps.Polygon({
                 name: "Брвеница",
@@ -1636,6 +1691,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "15.855"
             }),
             new google.maps.Polygon({
                 name: "Боговиње",
@@ -1645,6 +1701,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 1,
+                population: "28.997"
             }),
             new google.maps.Polygon({
                 name: "Сопиште",
@@ -1654,6 +1712,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "5.656"
             }),
             new google.maps.Polygon({
                 name: "Зелино",
@@ -1663,6 +1722,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "24.390"
             }),
             new google.maps.Polygon({
                 name: "Градско",
@@ -1672,6 +1732,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "3.760"
             }),
             new google.maps.Polygon({
                 name: "Студеничани",
@@ -1681,6 +1742,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "17.246"
             }),
             new google.maps.Polygon({
                 name: "Тетово",
@@ -1690,6 +1752,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 7,
+                population: "86.580"
             }),
             new google.maps.Polygon({
                 name: "Теарце",
@@ -1699,6 +1763,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "22.454"
             }),
             new google.maps.Polygon({
                 name: "Јегуновце",
@@ -1708,6 +1773,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "10.790"
             }),
             new google.maps.Polygon({
                 name: "Росоман",
@@ -1717,6 +1783,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "4.141"
             }),
             new google.maps.Polygon({
                 name: "Кавадарци",
@@ -1726,6 +1793,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 3,
+                population: "38.741"
             }),
             new google.maps.Polygon({
                 name: "Неготино",
@@ -1735,6 +1804,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 2,
+                population: "19.212"
             }),
             new google.maps.Polygon({
                 name: "Демир Капија",
@@ -1744,6 +1815,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "4.545"
             }),
             new google.maps.Polygon({
                 name: "Гевгелија",
@@ -1753,6 +1825,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 2,
+                population: "22.988"
             }),
             new google.maps.Polygon({
                 name: "Валандово",
@@ -1762,6 +1836,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 1,
+                population: "11.890"
             }),
             new google.maps.Polygon({
                 name: "Богданци",
@@ -1771,6 +1847,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "8.707"
             }),
             new google.maps.Polygon({
                 name: "Дојран",
@@ -1780,6 +1857,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "3.426"
             }),
             new google.maps.Polygon({
                 name: "Виница",
@@ -1789,6 +1867,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 1,
+                population: "19.938"
             }),
             new google.maps.Polygon({
                 name: "Радовиш",
@@ -1798,6 +1878,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 3,
+                population: "28.244"
             }),
             new google.maps.Polygon({
                 name: "Конче",
@@ -1807,6 +1889,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "3.536"
             }),
             new google.maps.Polygon({
                 name: "Струмица",
@@ -1816,6 +1899,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 3,
+                population: "54.676"
             }),
             new google.maps.Polygon({
                 name: "Василево",
@@ -1825,6 +1910,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "12.122"
             }),
             new google.maps.Polygon({
                 name: "Босилово",
@@ -1834,6 +1920,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "14.260"
             }),
             new google.maps.Polygon({
                 name: "Ново Село",
@@ -1843,6 +1930,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "11.567"
             }),
             new google.maps.Polygon({
                 name: "Берово",
@@ -1852,6 +1940,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "13.941"
             }),
             new google.maps.Polygon({
                 name: "Пехчево",
@@ -1861,6 +1950,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 1,
+                population: "5.517"
             }),
             new google.maps.Polygon({
                 name: "Куманово",
@@ -1870,6 +1961,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 6,
+                population: "105.484"
             }),
             new google.maps.Polygon({
                 name: "Нагоричане",
@@ -1879,6 +1972,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "4.840"
             }),
             new google.maps.Polygon({
                 name: "Арачиново",
@@ -1888,6 +1982,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "11.597"
             }),
             new google.maps.Polygon({
                 name: "Илинден",
@@ -1897,6 +1992,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "15.894"
             }),
             new google.maps.Polygon({
                 name: "Скопје",
@@ -1906,6 +2002,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                gynecologists: 43,
+                population: "506.926",
             }),
             new google.maps.Polygon({
                 name: "Чучер-Сандево",
@@ -1915,6 +2013,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "8.493"
             }),
             new google.maps.Polygon({
                 name: "Липково",
@@ -1924,6 +2023,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "27.058"
             }),
             new google.maps.Polygon({
                 name: "Вевчани",
@@ -1933,6 +2033,8 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                s: 1,
+                population: "2.433"
             }),
             new google.maps.Polygon({
                 name: "Македонска Каменица",
@@ -1942,6 +2044,7 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: "fhsdfsdghf",
+                population: "8.110"
             }),
             new google.maps.Polygon({
                 name: "Делчево",
@@ -1951,7 +2054,10 @@ function initMap() {
                 strokeWeight: 2,
                 fillOpacity: 0.35,
                 content: '',
-                bolnica: 'eteRaboti'
+                bolnica: 'eteRaboti',
+                gynecologists: 2,
+                population: "17.505"
+
             }),
         ];
 
@@ -1986,7 +2092,15 @@ function initMap() {
                 this.setOptions( { fillColor: '#4b1c8c'} )
             });
             google.maps.event.addListener(opstina[i], "click", function(event) {
-                document.getElementById('glupsi').innerText = opstina[74].bolnica;
+                $('#gameContent').text("");
+                $('#gameContent').append(`<div id="municipality_Info">
+                            <h2 id="municipality_name">Општина: ${this.name}</h2>
+                            <h5 id="population">Вкупно население: ${this.population}</h5>
+                            <h4 id="gynecologists">Број на гинеколози: ${this.gynecologists > 0 ? this.gynecologists : 
+                                "Во вашата општина нема гинеколози кои соработуваат со Фонд за Здравство, одете до наредната општина"}</h4>
+                            <button id="makeFirstApp" class="btn btn-primary appointmentBtn">Закажи Прв Преглед</button>
+                          </div>`);
+
             });
             google.maps.event.addListener(opstina[i], "mouseout", function(event) {
                 this.setOptions( { fillColor: '#7647b7'} )
