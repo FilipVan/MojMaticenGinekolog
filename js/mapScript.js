@@ -2097,6 +2097,8 @@ function initMap() {
                 infowindow.open(map, opstina[i]);
                 this.setOptions({ fillColor: '#4b1c8c' })
             });
+
+            // Municipalities generate the selection of the starting position
             google.maps.event.addListener(opstina[i], "click", function(event) {
                 $('#gameContent').text("");
                 $('#gameContent').append(`<div id="municipality_Info">
@@ -2110,6 +2112,8 @@ function initMap() {
                 $("#gameContent").removeClass("hide");
 
             });
+
+
             google.maps.event.addListener(opstina[i], "mouseout", function(event) {
                 this.setOptions({ fillColor: '#7647b7' })
                 infowindow.close(map, opstina[i]);
