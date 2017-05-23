@@ -49,7 +49,9 @@ $(() => {
                 <div class="col-6">
                     <button id="jumpAppBtn" class="btn btn-primary appointmentBtn">Скокни го следниот преглед</button>
                 </div>
-         </div>`)
+         </div>`);
+         $("#continueBtn").hide();
+         $("#abortBtn").hide();
     });
 
     $gameContent.on("click", "#jumpAppBtn", () => {
@@ -70,7 +72,9 @@ $(() => {
                     <button id="jumpAllApp" class="btn btn-primary appointmentBtn">Скокни ги сите прегледи</button>
                 </div>
             </div>
-        `)
+        `);
+        $("#nextAppBtn").hide();
+        $("#jumpAppBtn").hide();
     });
 
 });

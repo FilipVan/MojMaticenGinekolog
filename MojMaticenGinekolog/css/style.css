@@ -48,6 +48,7 @@ body {
     border-radius: 0;
     padding: 0 -15px;
     background-color: #7647b7;
+    outline: none;
 }
 #gameContent .btn:hover {
     background-color: #4b1c8c;
