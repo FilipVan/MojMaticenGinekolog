@@ -2098,6 +2098,7 @@ function initMap() {
                 this.setOptions({ fillColor: '#4b1c8c' })
             });
             google.maps.event.addListener(opstina[i], "click", function(event) {
+                $('#gameContent').show();
                 $('#gameContent').text("");
                 $('#gameContent').append(`<div id="municipality_Info">
                             <h2 id="municipality_name">Општина: ${this.name}</h2>
