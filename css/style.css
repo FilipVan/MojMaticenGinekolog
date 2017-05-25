@@ -45,8 +45,32 @@ body {
 #navHeader {
     display: inline-block;
 }
-.unpickedChoice.unpickedChoice {
+#gameContent .btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    padding: 0 -15px;
+    background-color: #7647b7;
+}
+.btnDescription {
+    border: 1px solid #7647b7;
+    height: 188px;
+    widows: 100%;
+
+}
+.btnDescription_content {
+    margin: 10%;
+}
+#gameContent .btn:hover {
+    background-color: #4b1c8c;
+}
+.unpickedChoice, .unpickedChoice:hover {
     background-color: grey !important;
+    cursor: default !important;
+}
+.pickedChoice, .pickedChoice:hover {
+    background-color: #7647b7 !important;
+    cursor: default !important;
 }
 .navbar-light {
     background-color: black;
@@ -87,7 +111,7 @@ body {
     color: #fff;
 }
 
-#gameContent .btn {
+/*#gameContent .btn {
     width: 100%;
     height: 60px;
     border-radius: 0;
@@ -97,7 +121,7 @@ body {
 
 #gameContent .btn:hover {
     background-color: #4b1c8c;
-}
+}*/
 
 #nav {
     background-color: #7647b7;
