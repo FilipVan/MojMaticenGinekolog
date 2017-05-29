@@ -2100,6 +2100,7 @@ function initMap() {
 
             // Municipalities generate the selection of the starting position
             google.maps.event.addListener(opstina[i], "click", function(event) {
+                $('#gameContent').show();
                 $('#gameContent').text("");
                 $('#gameContent').append(`<div id="municipality_Info">
                             <h2 id="municipality_name">Општина: ${this.name}</h2>
